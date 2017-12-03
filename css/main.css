@@ -156,10 +156,18 @@ body {
     .header-img {
         -webkit-mask-image: linear-gradient(to right, transparent 1%, rgba(0, 0, 0, 1), transparent 99%);
     }
+
+    .earth-container {
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, transparent);
+    }
 }
 
 @supports not (-webkit-mask-image: linear-gradient(to right, transparent 1%, rgba(0, 0, 0, 1), transparent 99%)) {
     .header-img {
+        box-shadow: 0 0 100px 80px black inset;
+    }
+
+    .earth-container {
         box-shadow: 0 0 100px 80px black inset;
     }
 }
